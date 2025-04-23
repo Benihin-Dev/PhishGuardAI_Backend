@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+numpy
+requests
+beautifulsoup4
+whois
+python-whois
+tldextract
+scikit-learn
+pydantic
