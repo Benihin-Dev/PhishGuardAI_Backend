@@ -479,7 +479,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://phish-guard-ai.vercel.app/"],  # Add your frontend URL here
+    allow_origins=["http://localhost:3000", "https://phish-guard-ai-c4vu.vercel.app/"],  # Add your frontend URL here
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
