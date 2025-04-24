@@ -15,6 +15,7 @@ import json
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 # Suppress warnings
 warnings.filterwarnings("ignore")
@@ -473,6 +474,15 @@ app = FastAPI(
     title="Phishing Detection API",
     description="API for detecting phishing URLs using machine learning",
     version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "https://phish-guard-ai.vercel.app/"],  # Add your frontend URL here
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
 )
 
 # Define request model
