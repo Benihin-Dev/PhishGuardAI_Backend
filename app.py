@@ -492,7 +492,7 @@ class URLRequest(BaseModel):
 @app.get("/")
 async def root():
     # return {"message": "Welcome to the Phishing Detection API"}
-    return "*ththa, Nampikka ellayaada Unkalukku!.."
+    return "*ththa!.. Fuk You da"
 
 
 # In the predict endpoint function:
